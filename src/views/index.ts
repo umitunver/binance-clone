@@ -8,3 +8,5 @@ export { default as ExploreEndless } from './exploreEndless'
 export { default as CryptoExchange } from './cryptoExchange'
 export { default as DownloadSelects } from './downloadSelects'
 export { default as NeedHelp } from './needHelp'
+export { default as StartEarning } from './startEarning'
+

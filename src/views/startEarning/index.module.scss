@@ -1,0 +1,20 @@
+.contain {
+  padding: 80px 0px;
+  background-color: #FAFAFA;
+
+  .inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .title {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 48px;
+      color: #1E2329;
+      text-align: center;
+    }
+  }
+}
