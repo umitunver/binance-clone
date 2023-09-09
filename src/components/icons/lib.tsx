@@ -16,14 +16,14 @@ const GiftIcon = (props: IconProps) => {
 
 const ChevronRightIcon = (props: IconProps) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={props.width} height={props.height} viewBox="0 0 24 24" fill="none" className="icon-dir css-1j6o9r1"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.288 12l-3.89 3.89 1.768 1.767L15.823 12l-1.768-1.768-3.889-3.889-1.768 1.768 3.89 3.89z" fill={props.fill || "currentColor"}></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width={props.width} height={props.height} viewBox="0 0 24 24" fill="none" className="icon-dir css-1j6o9r1"><path fillRule="evenodd" clipRule="evenodd" d="M12.288 12l-3.89 3.89 1.768 1.767L15.823 12l-1.768-1.768-3.889-3.889-1.768 1.768 3.89 3.89z" fill={props.fill || "currentColor"}></path></svg>
   )
 }
 
 const UserIcon = (props: IconProps) => {
   return (
     <svg width={props.width || 17} height={props.height || 16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 4C12.5 6.20914 10.7091 8 8.5 8C6.29086 8 4.5 6.20914 4.5 4C4.5 1.79086 6.29086 0 8.5 0C10.7091 0 12.5 1.79086 12.5 4ZM4.5 10C2.29086 10 0.5 11.7909 0.5 14V16H16.5V14C16.5 11.7909 14.7091 10 12.5 10H4.5Z" fill={props.fill || "#181A20"} />
+      <path fillRule="evenodd" clipRule="evenodd" d="M12.5 4C12.5 6.20914 10.7091 8 8.5 8C6.29086 8 4.5 6.20914 4.5 4C4.5 1.79086 6.29086 0 8.5 0C10.7091 0 12.5 1.79086 12.5 4ZM4.5 10C2.29086 10 0.5 11.7909 0.5 14V16H16.5V14C16.5 11.7909 14.7091 10 12.5 10H4.5Z" fill={props.fill || "#181A20"} />
     </svg>
   )
 }

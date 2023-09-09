@@ -1,0 +1,33 @@
+.contain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  .title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1E2329;
+  }
+
+  .desciption {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 16px;
+    color: #474D57;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+
+    .link_text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #707A8A;
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.table_responsive {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.th {
+  font-size: 14px;
+  color: #707A8A;
+  line-height: 18px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.td {
+  padding: 15px 5px;
+  font-weight: 400;
+}
+
+.table_main {
+  .tr {
+    cursor: pointer;
+    &:hover {
+      background-color: #FAFAFA;
+      border-radius: 10px;
+    }
+  }
+}
+
+.table_header th[data-align="start"] {
+  text-align: start;
+}
+
+.table_header th[data-align="center"] {
+  text-align: center;
+}
+
+.table_header th[data-align="end"] {
+  text-align: end;
+}
+
+
+.table_main td[data-align="start"] {
+  text-align: start;
+}
+
+.table_main td[data-align="center"] {
+  text-align: center;
+}
+
+.table_main td[data-align="end"] {
+  text-align: end;
+}

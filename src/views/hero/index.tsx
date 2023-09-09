@@ -23,7 +23,7 @@ export default function Hero() {
             </div>
 
             <div className={styles.buttons}>
-              <Button title='Sign up width Email or Phone' variant='primary' mt={16} icon='user' iconWidth={17} iconHeight={16} />
+              <Button title='Sign up width Email or Phone' variant='primary' mt={16} icon='user' iconWidth={17} iconHeight={16} fullWidth={true}/>
               <div className={styles.line_area}>
                 <span className={styles.line}></span>
                 <span className={styles.line_text}>
@@ -32,8 +32,8 @@ export default function Hero() {
                 <span className={styles.line}></span>
               </div>
               <div className={styles.login_buttons}>
-                <Button title='Google' variant='secondary' mt={16} icon='google' iconWidth={24} iconHeight={24} />
-                <Button title='Apple' variant='secondary' mt={16} icon='apple' iconWidth={24} iconHeight={24} />
+                <Button title='Google' variant='secondary' mt={16} icon='google' iconWidth={24} iconHeight={24} fullWidth={true} />
+                <Button title='Apple' variant='secondary' mt={16} icon='apple' iconWidth={24} iconHeight={24}  fullWidth={true}/>
               </div>
             </div>
           </div>

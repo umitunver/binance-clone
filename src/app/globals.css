@@ -125,6 +125,7 @@ a {
   align-items: center;
   margin-top: 20px;
 }
+
 .swiper-pagination-bullet-active {
   background: rgb(240, 185, 11) !important;
   position: relative !important;
@@ -141,4 +142,13 @@ a {
   vertical-align: top !important;
   transition: all 0.5s ease 0s !important;
   border-radius: 6px !important;
+}
+
+
+.up {
+  color: rgb(3, 166, 109);
+}
+
+.down {
+  color: rgb(207, 48, 74);
 }

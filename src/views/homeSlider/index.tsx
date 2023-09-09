@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Container } from '@/components';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import { HomeBannerData } from '@/data/homeBanner';
 import Image from 'next/image';
 import Images from '@/constants/images';
@@ -22,10 +22,15 @@ export default function HomeSlider() {
   return (
     <Container>
       <Swiper
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           el: '.custom-pagination',
           clickable: true,
         }}
+        modules={[Autoplay]}
         className={`${styles.banner} ${'mySwiper'}`}>
         {
           HomeBannerData?.map((item, index) => (
