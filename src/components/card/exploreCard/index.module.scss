@@ -1,0 +1,38 @@
+.card {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 570px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all .15s;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #FAFAFA;
+  border-radius: 8px;
+
+  &:hover {
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    color: #1E2329;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1E2329;
+  }
+
+  &:nth-child(2) {
+    margin: 0 24px;
+  }
+}

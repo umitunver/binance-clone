@@ -9,6 +9,9 @@ import PortfolioSection from './files/images/portfolio-section.webp'
 import Kyc from './files/images/kyc.svg'
 import User from './files/images/user.svg'
 import Spot from './files/images/spot.svg'
+import BinanceNft from './files/images/nft.webp'
+import BinanceEarn from './files/images/binance-earn.webp'
+import BinancePay from './files/images/binance-pay.webp'
 
 // Coins
 import Bnb from './files/images/bnb.png'
@@ -62,7 +65,10 @@ const Images: ImagesType = {
   PortfolioSection,
   Kyc,
   User,
-  Spot
+  Spot,
+  BinanceNft,
+  BinanceEarn,
+  BinancePay
 }
 
 export default Images

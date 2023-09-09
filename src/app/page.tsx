@@ -1,6 +1,6 @@
 import { AppLayout, Container } from '@/components'
 import styles from './page.module.css'
-import { EasySteps, Hero, HomeFeed, PopularCryptocurrencies, TokenRewards } from '@/views'
+import { EasySteps, ExploreEndless, Hero, HomeFeed, PopularCryptocurrencies, TokenRewards } from '@/views'
 import HomeSlider from '@/views/homeSlider'
 
 export default function Home() {
@@ -12,6 +12,7 @@ export default function Home() {
       <HomeFeed />
       <TokenRewards />
       <EasySteps />
+      <ExploreEndless />
     </AppLayout>
   )
 }
