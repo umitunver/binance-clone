@@ -1,0 +1,35 @@
+.contain {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  .feeds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .community_card {
+    min-width: 328px;
+    background-color: rgb(245, 245, 245);
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 24px 0px 0px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: rgb(30, 35, 41);
+      margin: 8px 0px 16px;
+    }
+
+    .in {
+      margin: 16px;
+    }
+  }
+}

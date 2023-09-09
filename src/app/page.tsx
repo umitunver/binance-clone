@@ -1,6 +1,6 @@
 import { AppLayout, Container } from '@/components'
 import styles from './page.module.css'
-import { Hero, PopularCryptocurrencies } from '@/views'
+import { Hero, HomeFeed, PopularCryptocurrencies } from '@/views'
 import HomeSlider from '@/views/homeSlider'
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <Hero />
       <HomeSlider />
       <PopularCryptocurrencies />
+      <HomeFeed />
     </AppLayout>
   )
 }

@@ -44,4 +44,11 @@ const AppleIcon = (props: IconProps) => {
   )
 }
 
-export { GiftIcon, ChevronRightIcon, UserIcon, GoogleIcon, AppleIcon }
+
+const TriangleIcon = (props: IconProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" className="css-dg7fvt"><path d="M12.24 8L8 12.24l4.24 4.24 4.24-4.24L12.24 8zm-1.41 4.24l1.41-1.41 1.41 1.41-1.41 1.41-1.41-1.41z" fill="currentColor"></path></svg>
+  )
+}
+
+export { GiftIcon, ChevronRightIcon, UserIcon, GoogleIcon, AppleIcon, TriangleIcon }

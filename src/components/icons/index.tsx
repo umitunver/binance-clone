@@ -21,7 +21,8 @@ const Icon = React.memo(({ icon, ...props }: Props) => {
     chevronRight: <Icons.ChevronRightIcon {...props} />,
     user: <Icons.UserIcon {...props} />,
     google: <Icons.GoogleIcon {...props} />,
-    apple: <Icons.AppleIcon {...props} />
+    apple: <Icons.AppleIcon {...props} />,
+    triangleIcon: <Icons.TriangleIcon {...props} />,
   }
   if (!match[icon]) return null;
   return <span className="icon">{match[icon]}</span>;

@@ -14,4 +14,10 @@ function abbreviateNumber(number: number) {
   }
 }
 
-export { abbreviateNumber }
+function wordSlice(value: string, limit: number) {
+  if (value?.length <= limit) {
+    return value
+  }
+  return value?.slice(0, limit) + "..."
+}
+export { abbreviateNumber, wordSlice }

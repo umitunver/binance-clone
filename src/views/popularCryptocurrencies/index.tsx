@@ -66,9 +66,10 @@ export default function PopularCryptoCurrencies() {
     }
   ]
   return (
-    <div className={styles.contain}>
-      <Container>
-        <SectionBanner title='Popular cryptocurrencies' linkText='View more markets' />
+
+    <Container mt={80}>
+      <SectionBanner title='Popular cryptocurrencies' linkText='View more markets' />
+      <div className={styles.contain}>
         <Table
           columns={Columns}
           data={CurrenciesData}
@@ -80,7 +81,8 @@ export default function PopularCryptoCurrencies() {
           Sign up now to build your own portfolio for free!
         </h2>
         <Button title='Get Started' variant='primary' mt={25} />
-      </Container>
-    </div>
+      </div>
+    </Container>
+
   )
 }
