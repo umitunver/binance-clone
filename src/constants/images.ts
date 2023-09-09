@@ -5,6 +5,10 @@ import HomeBannerThree from './files/images/banner_3.png'
 import HomeBannerFour from './files/images/banner_4.png'
 import WebBg from './files/images/web-background-image.png'
 import FeedEntryPc from './files/images/feed-entry-pc.svg'
+import PortfolioSection from './files/images/portfolio-section.webp'
+import Kyc from './files/images/kyc.svg'
+import User from './files/images/user.svg'
+import Spot from './files/images/spot.svg'
 
 // Coins
 import Bnb from './files/images/bnb.png'
@@ -54,7 +58,11 @@ const Images: ImagesType = {
   User_3,
   User_4,
   User_5,
-  User_6
+  User_6,
+  PortfolioSection,
+  Kyc,
+  User,
+  Spot
 }
 
 export default Images

@@ -1,0 +1,14 @@
+.contain {
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+}
