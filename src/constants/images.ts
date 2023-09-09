@@ -12,6 +12,11 @@ import Btc from './files/images/btc.png'
 import Eth from './files/images/eth.png'
 import Apt from './files/images/apt.png'
 import Xrp from './files/images/xrp.png'
+import Ada from './files/images/ada.png'
+import Shib from './files/images/shib.png'
+import Busd from './files/images/busd.png'
+import Dot from './files/images/dot.png'
+import Usdt from './files/images/usdt.png'
 
 // Users
 
@@ -38,6 +43,11 @@ const Images: ImagesType = {
   Eth,
   Apt,
   Xrp,
+  Ada,
+  Shib,
+  Busd,
+  Dot,
+  Usdt,
   FeedEntryPc,
   User_1,
   User_2,
