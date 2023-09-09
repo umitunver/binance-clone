@@ -116,3 +116,29 @@ a {
 .secondary {
   background-color: #eaecef;
 }
+
+
+/* Swiper Slide */
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.swiper-pagination-bullet-active {
+  background: rgb(240, 185, 11) !important;
+  position: relative !important;
+  display: inline-block !important;
+  -webkit-box-flex: 0 !important;
+  flex: 0 1 auto !important;
+  box-sizing: content-box !important;
+  width: 25px !important;
+  height: 8px !important;
+  margin: 0px 3px !important;
+  padding: 0px !important;
+  text-align: center !important;
+  text-indent: -999px !important;
+  vertical-align: top !important;
+  transition: all 0.5s ease 0s !important;
+  border-radius: 6px !important;
+}
