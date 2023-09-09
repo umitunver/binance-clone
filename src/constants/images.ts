@@ -17,6 +17,9 @@ import SecureAsset from './files/images/secure-asset.svg'
 import AccessControl from './files/images/access-control.svg'
 import Unlock from './files/images/unlock.svg'
 import DownloadSection from './files/images/download-section.webp'
+import CustomerSupport from './files/images/cs.svg'
+import Community from './files/images/community.svg'
+import Blog from './files/images/blog.svg'
 
 // Coins
 import Bnb from './files/images/bnb.png'
@@ -78,7 +81,10 @@ const Images: ImagesType = {
   SecureAsset,
   AccessControl,
   Unlock,
-  DownloadSection
+  DownloadSection,
+  CustomerSupport,
+  Community,
+  Blog
 }
 
 export default Images
