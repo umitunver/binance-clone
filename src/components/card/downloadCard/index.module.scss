@@ -1,0 +1,34 @@
+.card {
+  flex: 0 0 calc(33.33%);
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-width: 100px;
+
+  .in {
+    padding: 16px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+  }
+
+  &:hover {
+    .in {
+      background-color: #FAFAFA;
+    }
+  }
+
+  .title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1E2329;
+  }
+}

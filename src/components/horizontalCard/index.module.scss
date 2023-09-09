@@ -4,7 +4,14 @@
   gap: 3rem;
   margin-bottom: 64px;
 
-  .title {
+  .title[data-fontsize="exchange"] {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1E2329;
+  }
+
+  .title[data-fontsize="easy"] {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;

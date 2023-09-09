@@ -12,6 +12,11 @@ import Spot from './files/images/spot.svg'
 import BinanceNft from './files/images/nft.webp'
 import BinanceEarn from './files/images/binance-earn.webp'
 import BinancePay from './files/images/binance-pay.webp'
+import TrustedSection from './files/images/trusted-section.webp'
+import SecureAsset from './files/images/secure-asset.svg'
+import AccessControl from './files/images/access-control.svg'
+import Unlock from './files/images/unlock.svg'
+import DownloadSection from './files/images/download-section.webp'
 
 // Coins
 import Bnb from './files/images/bnb.png'
@@ -68,7 +73,12 @@ const Images: ImagesType = {
   Spot,
   BinanceNft,
   BinanceEarn,
-  BinancePay
+  BinancePay,
+  TrustedSection,
+  SecureAsset,
+  AccessControl,
+  Unlock,
+  DownloadSection
 }
 
 export default Images

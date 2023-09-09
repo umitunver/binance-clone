@@ -1,0 +1,32 @@
+.contain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  .selection {
+    width: 100%;
+    padding-left: 80px;
+
+    .qr_area {
+      min-width: 100%;
+      display: flex;
+      align-items: center;
+      background-color: #FAFAFA;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 40px;
+
+      .right {
+        margin-left: 16px;
+      }
+    }
+
+    .download_select {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+    }
+  }
+}
