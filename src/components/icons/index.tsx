@@ -10,7 +10,7 @@ interface Match {
 type IconType = keyof Match;
 
 interface Props {
-  icon: IconType;
+  icon: IconType | any;
   width?: number;
   height?: number;
   fill?: string;
@@ -33,6 +33,10 @@ const Icon = React.memo(({ icon, ...props }: Props) => {
     globe: <Icons.Globe {...props} />,
     cash: <Icons.Cash {...props} />,
     arrowRight: <Icons.ArrowRight {...props} />,
+    search: <Icons.Search {...props} />,
+    qrDownload: <Icons.QrDownload {...props} />,
+    darkMode: <Icons.DarkMode {...props} />,
+    lightMode: <Icons.LightMode {...props} />
   }
   if (!match[icon]) return null;
   return <span className="icon">{match[icon]}</span>;

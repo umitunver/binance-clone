@@ -106,6 +106,28 @@ const ArrowRight = (props: IconProps) => {
     <svg className="bn-svg header-nav-subarrow" width={props?.height || 16} height={props?.height || 16} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 11.999l-7.071-7.071-1.768 1.768 4.055 4.054H2.999v2.5h13.216l-4.054 4.053 1.768 1.768L21 12v-.001z" fill="#FCD535"></path></svg>
   )
 }
+const Search = (props: IconProps) => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"><defs><symbol viewBox="0 0 24 24" id="search-f"> <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6C13.7614 6 16 8.23858 16 11C16 13.7614 13.7614 16 11 16C8.23857 16 6 13.7614 6 11C6 8.23858 8.23858 6 11 6ZM11 3C15.4183 3 19 6.58172 19 11C19 12.3907 18.6451 13.6985 18.021 14.8379L21.0915 17.9086L19.5006 19.4995L17.9097 21.0904L14.8396 18.0201C13.6999 18.6448 12.3914 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3Z" fill="#1E2329"></path></symbol></defs><g fill="#1E2329"> <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6C13.7614 6 16 8.23858 16 11C16 13.7614 13.7614 16 11 16C8.23857 16 6 13.7614 6 11C6 8.23858 8.23858 6 11 6ZM11 3C15.4183 3 19 6.58172 19 11C19 12.3907 18.6451 13.6985 18.021 14.8379L21.0915 17.9086L19.5006 19.4995L17.9097 21.0904L14.8396 18.0201C13.6999 18.6448 12.3914 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3Z" fill="currentColor"></path></g></svg>
+  )
+}
+
+const QrDownload = (props: IconProps) => {
+  return (
+    <svg className="bn-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"><defs><symbol viewBox="0 0 24 24" id="app-download-f"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 6V9H4.5V3H5H7.5H16H19V6V9H16V6H7.5ZM5 21H4.5V15H7.5V18H16V15H19V18V21H16H7.5H5ZM13.5088 12.0024L16.0176 12.0078L12.0088 16.0166L8 12.0078L10.5088 11.9832V8H13.5088V12.0024Z" fill="#1E2329"></path></symbol></defs><g fill="#1E2329"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 6V9H4.5V3H5H7.5H16H19V6V9H16V6H7.5ZM5 21H4.5V15H7.5V18H16V15H19V18V21H16H7.5H5ZM13.5088 12.0024L16.0176 12.0078L12.0088 16.0166L8 12.0078L10.5088 11.9832V8H13.5088V12.0024Z" fill="currentColor"></path></g></svg>
+  )
+}
+
+const DarkMode = (props: IconProps) => {
+  return (
+    <svg className="bn-svg theme-icon hover-color" height={16} width={16} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.968 12.768a7 7 0 01-9.735-9.735 9 9 0 109.735 9.735z" fill="currentColor"></path></svg>
+  )
+}
+const LightMode = (props: IconProps) => {
+  return (
+    <svg className="bn-svg theme-icon hover-color" height={16} width={16} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" ><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 2h3v3h-3V2zM16 12a4 4 0 11-8 0 4 4 0 018 0zM5.99 3.869L3.867 5.99 5.99 8.112 8.111 5.99 5.989 3.87zM2 13.5v-3h3v3H2zm1.868 4.51l2.121 2.12 2.122-2.12-2.122-2.122-2.121 2.121zM13.5 19v3h-3v-3h3zm4.51-3.112l-2.121 2.122 2.121 2.121 2.121-2.121-2.121-2.122zM19 10.5h3v3h-3v-3zm-3.11-4.51l2.12 2.121 2.122-2.121-2.121-2.121-2.122 2.121z" fill="currentColor"></path></svg>
+  )
+}
 export {
   GiftIcon,
   ChevronRightIcon,
@@ -122,5 +144,9 @@ export {
   Api,
   Globe,
   Cash,
-  ArrowRight
+  ArrowRight,
+  Search,
+  QrDownload,
+  DarkMode,
+  LightMode
 }

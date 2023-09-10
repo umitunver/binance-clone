@@ -1,9 +1,16 @@
+"use client"
 import Image from 'next/image'
 import styles from './index.module.scss'
 import Images from '@/constants/images'
-import { NavigationMenus } from '@/views'
+import { HeaderSearch, NavigationMenus, QrDownload } from '@/views'
+import Icon from '@/components/icons'
+import { Button } from '@/components'
+import Link from 'next/link'
+import { useState } from 'react'
 
 export default function Header() {
+  const [search, setSearch] = useState<Boolean>(false)
+  const [qrDownload, setQrDownload] = useState<Boolean>(false)
   return (
     <header className={styles.header}>
       <div className={styles.left}>
@@ -13,7 +20,53 @@ export default function Header() {
         <NavigationMenus />
 
       </div>
-      <div className={styles.right}></div>
+      <div className={styles.right}>
+        <ul>
+          <li
+            onMouseOver={() => { setSearch(true) }} onMouseOut={() => { setSearch(false) }}
+          >
+            <div className={styles.element}>
+              <Icon icon={'search'} />
+            </div>
+            <div className={styles.sub}>
+              <HeaderSearch visible={search} />
+            </div>
+          </li>
+          <li>
+            <div className={styles.element}>
+              <span className={styles.text}>Log In</span>
+            </div>
+          </li>
+          <li>
+            <div className={styles.element}>
+              <Link href={"#"} className={`${styles.button}`}>
+                <Icon icon={'gift'} />
+                Register
+              </Link>
+            </div>
+          </li>
+          <li
+            onMouseOver={() => { setQrDownload(true) }} onMouseOut={() => { setQrDownload(false) }}
+          >
+            <div className={styles.element}>
+              <Icon icon={'qrDownload'} />
+            </div>
+            <div className={styles.sub}>
+              <QrDownload visible={qrDownload} />
+            </div>
+          </li>
+          <li>
+            <div className={styles.element}>
+              <Icon icon={'globe'} />
+            </div>
+          </li>
+          <li>
+            <div className={styles.element}>
+              <Icon icon={'darkMode'} />
+            </div>
+          </li>
+        </ul>
+      </div>
     </header>
   )
 }

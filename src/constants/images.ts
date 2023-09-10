@@ -21,6 +21,7 @@ import CustomerSupport from './files/images/cs.svg'
 import Community from './files/images/community.svg'
 import Blog from './files/images/blog.svg'
 import Logo from './files/images/logo.svg'
+import BinanceQr from './files/images/binanceQr.svg'
 
 // Coins
 import Bnb from './files/images/bnb.png'
@@ -156,8 +157,8 @@ const Images: ImagesType = {
   MenuFanToken,
   MenuDefi,
   MenuDex,
-  MenuCharity
-
+  MenuCharity,
+  BinanceQr
 
 }
 

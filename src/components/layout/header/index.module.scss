@@ -11,7 +11,59 @@
     .logo {
       margin-right: 8px;
     }
+  }
 
-    
+  .right {
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      list-style: none;
+
+      li {
+        padding: 20px 8px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: #1e2329;
+
+
+        &:hover {
+          .element {
+            color: #fcd535;
+          }
+        }
+
+        .text {
+          color: #1e2329;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 22px;
+
+          &:hover {
+            color: #fcd535 !important;
+          }
+        }
+
+        .sub {
+          position: relative;
+        }
+      }
+    }
+
+    .button {
+      padding: 4px 8px;
+      gap: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      color: #181A20;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background-color: #fcd535;
+    }
   }
 }

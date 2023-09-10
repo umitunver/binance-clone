@@ -1,0 +1,18 @@
+.sub {
+  position: absolute;
+  z-index: 1300;
+  top: 35px;
+  padding: 24px 24px 0px 24px;
+  border-radius: 0px 0px 8px 8px;
+  background: var(--color-popupBg, #fff);
+  box-shadow: 0px 8px 8px 0px rgba(24, 26, 32, .08);
+  right: 100%;
+
+  .message {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 24px;
+  }
+}

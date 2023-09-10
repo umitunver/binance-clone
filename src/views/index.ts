@@ -11,4 +11,6 @@ export { default as NeedHelp } from './needHelp'
 export { default as StartEarning } from './startEarning'
 export { default as footerSelects } from './footerSelects'
 export { default as NavigationMenus } from './navigationMenus'
+export { default as HeaderSearch } from './header/headerSearch'
+export { default as QrDownload } from './header/qrDownload'
 
