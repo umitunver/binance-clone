@@ -14,14 +14,14 @@
 
     .left {
       width: 336px;
-      border: 1px solid #eaecef;
+      border: 1px solid var(--color-textPrimary);
       display: flex;
       align-items: center;
       padding: 12px 12px;
       border-radius: 4px;
 
       span {
-        color: #b7bdc6;
+        color: var(--color-textSecondary);
       }
 
       .input_area {
@@ -30,15 +30,15 @@
         margin-left: 12px;
 
         .search_input {
-
+          background-color: transparent;
           border: 0px;
           font-size: 14px;
           font-weight: 500;
           width: 100%;
-          color: #1e2329;
+          color: var(--color-textPrimary);
 
           &::placeholder {
-            color: #b7bdc6;
+            color: var(--color-textSecondary);
           }
 
           &:focus {
@@ -49,7 +49,7 @@
     }
 
     span {
-      color: #1e2329;
+      color: var(--color-textPrimary);
       font-weight: 500;
       font-size: 14px;
       margin-left: 12px;
@@ -58,7 +58,7 @@
 
   .list_area {
     h4 {
-      color: #707a8a;
+      color: var(--color-textThird);
       font-size: 12px;
       font-weight: 500;
       line-height: 16px;

@@ -2,15 +2,15 @@
   display: flex;
   flex: 0 0 calc(48%);
   padding: 12px 16px;
-  background-color: #f5f5f6;
-  color: #1e2329;
+  background-color: var(--color-bg3);
+  color: var(--color-textPrimary);
   align-items: center;
   margin-bottom: 15px;
   border-radius: 4px;
 
   .title {
     margin-left: 8px;
-    color: #1e2329;
+    color: var(--color-textPrimary);
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
