@@ -1,0 +1,24 @@
+.contain {
+  position: relative;
+
+  .language {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+
+    &:hover {
+      .text {
+        color: #FCD535;
+      }
+    }
+
+    .text {
+      margin-left: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 22px;
+    }
+  }
+}

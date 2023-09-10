@@ -30,6 +30,8 @@ const Icon = React.memo(({ icon, ...props }: Props) => {
     Windows: <Icons.Windows {...props} />,
     Linux: <Icons.Linux {...props} />,
     Api: <Icons.Api {...props} />,
+    globe: <Icons.Globe {...props} />,
+    cash: <Icons.Cash {...props} />,
   }
   if (!match[icon]) return null;
   return <span className="icon">{match[icon]}</span>;

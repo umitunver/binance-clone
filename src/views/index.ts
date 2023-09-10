@@ -9,4 +9,6 @@ export { default as CryptoExchange } from './cryptoExchange'
 export { default as DownloadSelects } from './downloadSelects'
 export { default as NeedHelp } from './needHelp'
 export { default as StartEarning } from './startEarning'
+export { default as footerSelects } from './footerSelects'
+export { default as NavigationMenus } from './navigationMenus'
 
