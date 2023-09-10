@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from './index.module.scss'
 import Images from '@/constants/images'
 import Link from 'next/link'
+import Icon from '../icons'
 
 type StepProps = {
   image: string,
@@ -20,7 +21,13 @@ export default function HorizontalCard(props: StepProps) {
       </div>
 
       <div>
-        <div className={styles.title}>{props?.title}</div>
+        <div className={styles.title}>
+          {props?.title}
+          <div className={styles.arrow_icon}>
+            <Icon icon={'arrowRight'} />
+          </div>
+        </div>
+
         <p className={styles.description}>{props?.description}</p>
         {
           props?.linkText && <Link href={"#"} className={styles.button}>{props?.linkText}</Link>

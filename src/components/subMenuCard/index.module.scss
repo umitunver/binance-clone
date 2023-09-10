@@ -5,6 +5,16 @@
   width: 300px;
   cursor: pointer;
 
+  &:hover {
+    .title {
+      .arrow_icon {
+        margin-left: 10px;
+        visibility: visible;
+        transition: .5s all;
+      }
+    }
+  }
+
   &[data-position="top"] {
     align-items: flex-start;
   }
@@ -31,6 +41,16 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
+    display: flex;
+    align-items: center;
+
+
+
+    .arrow_icon {
+      margin-left: 5px;
+      visibility: hidden;
+      transition: .5s all;
+    }
   }
 }
 

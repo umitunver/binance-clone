@@ -101,6 +101,11 @@ const Cash = (props: IconProps) => {
   )
 }
 
+const ArrowRight = (props: IconProps) => {
+  return (
+    <svg className="bn-svg header-nav-subarrow" width={props?.height || 16} height={props?.height || 16} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 11.999l-7.071-7.071-1.768 1.768 4.055 4.054H2.999v2.5h13.216l-4.054 4.053 1.768 1.768L21 12v-.001z" fill="#FCD535"></path></svg>
+  )
+}
 export {
   GiftIcon,
   ChevronRightIcon,
@@ -116,5 +121,6 @@ export {
   Linux,
   Api,
   Globe,
-  Cash
+  Cash,
+  ArrowRight
 }
