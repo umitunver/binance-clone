@@ -13,4 +13,5 @@ export { default as footerSelects } from './footerSelects'
 export { default as NavigationMenus } from './navigationMenus'
 export { default as HeaderSearch } from './header/headerSearch'
 export { default as QrDownload } from './header/qrDownload'
+export { default as LanguageAndCurrency } from './header/languageAndCurrency'
 

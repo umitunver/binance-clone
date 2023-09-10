@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from './index.module.scss'
 import Images from '@/constants/images'
-import { HeaderSearch, NavigationMenus, QrDownload } from '@/views'
+import { HeaderSearch, LanguageAndCurrency, NavigationMenus, QrDownload } from '@/views'
 import Icon from '@/components/icons'
 import { Button } from '@/components'
 import Link from 'next/link'
@@ -11,6 +11,7 @@ import { useState } from 'react'
 export default function Header() {
   const [search, setSearch] = useState<Boolean>(false)
   const [qrDownload, setQrDownload] = useState<Boolean>(false)
+  const [globe, setGlobe] = useState<Boolean>(false)
   return (
     <header className={styles.header}>
       <div className={styles.left}>
@@ -55,9 +56,14 @@ export default function Header() {
               <QrDownload visible={qrDownload} />
             </div>
           </li>
-          <li>
+          <li
+            onMouseOver={() => { setGlobe(true) }} onMouseOut={() => { setGlobe(false) }}
+          >
             <div className={styles.element}>
               <Icon icon={'globe'} />
+            </div>
+            <div className={styles.sub}>
+              {/* <LanguageAndCurrency visible={globe} /> */}
             </div>
           </li>
           <li>

@@ -19,7 +19,7 @@ export default function HomeFeed() {
         <div className={styles.community_card}>
           <Image src={Images.FeedEntryPc} width={312} height={242} alt='Community' />
           <div className={styles.in}>
-            <div className={styles.title}>World's largest crypto community</div>
+            <div className={styles.title}>{"World's largest crypto community"}</div>
             <Button title="Explore Now" variant="primary" />
           </div>
         </div>

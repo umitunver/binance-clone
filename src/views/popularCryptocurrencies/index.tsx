@@ -16,7 +16,7 @@ export default function PopularCryptoCurrencies() {
         <TableDataCell align="start">
           <div className={styles.cell}>
             <div className={styles.images}>
-              <Image src={Images[props?.data?.image]} alt={props?.symbol} width={30} height={30} />
+              <Image src={Images[props?.data?.image]} alt={'crypto symbol'} width={30} height={30} />
             </div>
             <span className={styles.coin_name}>
               {props.data.name}

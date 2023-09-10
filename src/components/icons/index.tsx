@@ -1,7 +1,7 @@
 import React from "react";
 
 // icon library
-import * as Icons from './lib';
+import * as Icons from "./lib";
 
 interface Match {
   [key: string]: JSX.Element;
@@ -42,5 +42,5 @@ const Icon = React.memo(({ icon, ...props }: Props) => {
   return <span className="icon">{match[icon]}</span>;
 })
 
-
+Icon.displayName = 'Icon';
 export default Icon

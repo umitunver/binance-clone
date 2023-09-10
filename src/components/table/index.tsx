@@ -28,8 +28,8 @@ function Table<T>(props: TableProps<T>) {
         <TableHead>
           <TableRow>
             {
-              props.columns.map((col) => (
-                <TableHeaderCell align={col.align || "start"}>
+              props.columns.map((col, index) => (
+                <TableHeaderCell key={index} align={col.align || "start"}>
                   {col.name}
                 </TableHeaderCell>
               ))
@@ -47,16 +47,17 @@ function Table<T>(props: TableProps<T>) {
                   {props.element(data)}
                 </TableRow>
               ) : (
-                <TableRow>
+                <TableRow key={index}>
                   <TableNotFound />
                 </TableRow>
               )
             )
           ) : (
-            <TableRow>
+            <TableRow key="no-data">
               <TableNotFound />
             </TableRow>
           )}
+
         </TableBody>
       </table>
     </div>
@@ -81,6 +82,8 @@ export const TableHead = React.memo((props: TableElementProps) => {
   );
 });
 
+TableHead.displayName = 'TableHead';
+
 export const TableBody = React.memo((props: TableElementProps) => {
   return (
     <tbody
@@ -91,6 +94,8 @@ export const TableBody = React.memo((props: TableElementProps) => {
     </tbody>
   );
 });
+
+TableBody.displayName = 'TableBody';
 
 interface TableRowProps extends TableElementProps {
   onClick?: () => void;
@@ -103,6 +108,8 @@ export const TableRow = React.memo((props: TableRowProps) => {
     </tr>
   );
 });
+
+TableRow.displayName = 'TableRow';
 
 interface TableHeaderCell extends TableElementProps {
   align: "start" | "center" | "end";
@@ -117,6 +124,8 @@ export const TableHeaderCell = React.memo((props: TableHeaderCell) => {
   );
 });
 
+TableHeaderCell.displayName = 'TableHeaderCell';
+
 interface TableDataCellProps extends TableElementProps {
   className?: string;
   align?: "start" | "center" | "end";
@@ -128,6 +137,8 @@ export const TableDataCell = React.memo((props: TableDataCellProps) => {
     </td>
   )
 })
+
+TableDataCell.displayName = 'TableDataCell';
 
 function TableNotFound() {
   return (

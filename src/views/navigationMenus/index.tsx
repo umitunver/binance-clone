@@ -17,10 +17,10 @@ export default function NavigationMenus() {
                   <div className={styles.group_area}>
                     {
                       item?.group?.map((groupItem: any, groupIndex: any) => (
-                        <div className={styles.group}>
+                        <div className={styles.group} key={groupIndex}>
                           {
                             groupItem?.data?.map((data: any, dataIndex: any) => (
-                              <SubMenuCard image={data?.image} title={data?.title} description={data?.description} />
+                              <SubMenuCard key={dataIndex} image={data?.image} title={data?.title} description={data?.description} />
                             ))
                           }
                         </div>
