@@ -1,6 +1,6 @@
 .contain {
   padding: 80px 0px;
-  background-color: #FAFAFA;
+  background-color: var(--color-bg2);
 
   .inner {
     display: flex;
@@ -13,7 +13,7 @@
       font-weight: 600;
       font-size: 40px;
       line-height: 48px;
-      color: #1E2329;
+      color: var(--color-textPrimary);
       text-align: center;
     }
   }

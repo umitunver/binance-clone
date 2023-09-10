@@ -1,0 +1,167 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --color-sell: #f6465d;
+  --color-textSell: #e33b54;
+  --color-sellHover: #ff707e;
+  --color-depthSellBg: #fef1f2;
+  --color-buy: #0ecb81;
+  --color-textBuy: #03a66d;
+  --color-buyHover: #32d993;
+  --color-depthBuyBg: #e6fff1;
+  --color-line: #eaecef;
+  --color-outlineHover: #ffef87;
+  --color-primary: #fcd535;
+  --color-primaryHover: #f0b90b;
+  --color-error: #e33b54;
+  --color-errorBg: #fef1f2;
+  --color-success: #0ecb81;
+  --color-successBg: #e6fff1;
+  --color-disable: #eaecef;
+  --color-iconNormal: #929aa5;
+  --color-textWhite: #ffffff;
+  --color-textGray: #eaecef;
+  --color-textBlack: #0b0e11;
+  --color-textPrimary: #1e2329;
+  --color-textSecondary: #474d57;
+  --color-textThird: #707a8a;
+  --color-textDisabled: #b7bdc6;
+  --color-textBrand: #c99400;
+  --color-textToast: #8d5f02;
+  --color-bg1: #ffffff;
+  --color-bg2: #fafafa;
+  --color-bg3: #f5f5f5;
+  --color-bg4: #5e6673;
+  --color-bg6: #ffffff;
+  --color-bg7: #fafafa;
+  --color-popupBg: #ffffff;
+  --color-badgeBg: #fef6d8;
+  --color-gradientBrand: linear-gradient(180deg, #f8d12f 0%, #f0b90b 100%);
+  --color-gradientPrimary: linear-gradient(295.27deg, #ffffff 0%, #e6e8ea 84.52%)
+}
+
+
+[data-theme='dark'] {
+  --color-sell: #f6465d;
+  --color-textSell: #f6465d;
+  --color-sellHover: #ff707e;
+  --color-depthSellBg: #35141d;
+  --color-buy: #0ecb81;
+  --color-textBuy: #0ecb81;
+  --color-buyHover: #32d993;
+  --color-depthBuyBg: #102821;
+  --color-line: #2b3139;
+  --color-outlineHover: #6a4403;
+  --color-primary: #fcd535;
+  --color-primaryHover: #f0b90b;
+  --color-error: #f6465d;
+  --color-errorBg: #35141d;
+  --color-success: #0ecb81;
+  --color-successBg: #102821;
+  --color-disable: #474d57;
+  --color-iconNormal: #848e9c;
+  --color-textWhite: #ffffff;
+  --color-textGray: #eaecef;
+  --color-textBlack: #0b0e11;
+  --color-textPrimary: #eaecef;
+  --color-textSecondary: #b7bdc6;
+  --color-textThird: #848e9c;
+  --color-textDisabled: #5e6673;
+  --color-textBrand: #f0b90b;
+  --color-textToast: #a37200;
+  --color-bg1: #181a20;
+  --color-bg2: #0b0e11;
+  --color-bg3: #2b3139;
+  --color-bg4: #5e6673;
+  --color-bg6: #20262d;
+  --color-bg7: #191a1f;
+  --color-popupBg: #1e2329;
+  --color-badgeBg: #3c2601;
+  --color-gradientBrand: linear-gradient(180deg, #f8d12f 0%, #f0b90b 100%);
+  --color-gradientPrimary: linear-gradient(295.27deg, #15141a 0%, #474d57 84.52%)
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--color-bg1);
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+
+
+/* Global */
+.primary {
+  background-color: #FCD535;
+}
+
+.secondary {
+  background-color: var(--color-bg3);
+}
+
+
+/* Swiper Slide */
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(240, 185, 11) !important;
+  position: relative !important;
+  display: inline-block !important;
+  -webkit-box-flex: 0 !important;
+  flex: 0 1 auto !important;
+  box-sizing: content-box !important;
+  width: 25px !important;
+  height: 8px !important;
+  margin: 0px 3px !important;
+  padding: 0px !important;
+  text-align: center !important;
+  text-indent: -999px !important;
+  vertical-align: top !important;
+  transition: all 0.5s ease 0s !important;
+  border-radius: 6px !important;
+}
+
+
+.up {
+  color: rgb(3, 166, 109);
+}
+
+.down {
+  color: rgb(207, 48, 74);
+}

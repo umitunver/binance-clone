@@ -14,7 +14,7 @@
   .title {
     font-weight: 600;
     line-height: 32px;
-    color: #1E2329;
+    color: var(--color-textGray);
     font-size: 24px;
 
     &[data-fontsize="exchange"] {
@@ -35,7 +35,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #474D57;
+    color: var(--color-textSecondary);
 
     &[data-fontsize="needhelp"] {
       font-size: 14px;

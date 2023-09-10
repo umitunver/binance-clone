@@ -1,5 +1,5 @@
 .contain {
-  h2{
+  h2 {
     margin-top: 30px;
   }
 }
@@ -12,7 +12,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #1E2329;
+    color: var(--color-textPrimary);
     margin-right: 8px;
     margin-left: 16px;
   }
@@ -21,13 +21,13 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #707A8A;
+    color: var(--color-textThird);
   }
 
   .price {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #1E2329;
+    color: var(--color-textPrimary);
   }
 }

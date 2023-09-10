@@ -1,5 +1,4 @@
 import { AppLayout, Container } from '@/components'
-import styles from './page.module.css'
 import { CryptoExchange, DownloadSelects, EasySteps, ExploreEndless, Hero, HomeFeed, NeedHelp, PopularCryptocurrencies, StartEarning, TokenRewards } from '@/views'
 import HomeSlider from '@/views/homeSlider'
 

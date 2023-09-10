@@ -23,7 +23,7 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 20px;
-      color: rgb(71, 77, 87);
+      color: var(--color-textSecondary);
       margin-left: 8px;
     }
   }
@@ -41,7 +41,7 @@
     -webkit-box-orient: vertical;
     overflow-wrap: break-word;
     white-space: normal;
-    color: rgb(30, 35, 41);
+    color: var(--color-textPrimary);
   }
 
   .created_date {

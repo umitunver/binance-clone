@@ -14,7 +14,7 @@
 
 .th {
   font-size: 14px;
-  color: #707A8A;
+  color: var(--color-textThird);
   line-height: 18px;
   padding-bottom: 10px;
   font-weight: 300;
@@ -28,9 +28,9 @@
 .table_main {
   .tr {
     cursor: pointer;
+
     &:hover {
-      background-color: #FAFAFA;
-      border-radius: 10px;
+      background-color: var(--color-bg2);
     }
   }
 }

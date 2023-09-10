@@ -1,4 +1,5 @@
 import ForeGround from './files/images/foreground-image-light.png'
+import ForeGroundDark from './files/images/foreground-image-dark.png'
 import HomeBannerOne from './files/images/banner_1.webp'
 import HomeBannerTwo from './files/images/banner_2.png'
 import HomeBannerThree from './files/images/banner_3.png'
@@ -158,7 +159,8 @@ const Images: ImagesType = {
   MenuDefi,
   MenuDex,
   MenuCharity,
-  BinanceQr
+  BinanceQr,
+  ForeGroundDark
 
 }
 

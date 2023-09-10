@@ -2,16 +2,19 @@
 import Image from 'next/image'
 import styles from './index.module.scss'
 import Images from '@/constants/images'
-import { HeaderSearch, LanguageAndCurrency, NavigationMenus, QrDownload } from '@/views'
+import { HeaderSearch, NavigationMenus, QrDownload } from '@/views'
 import Icon from '@/components/icons'
-import { Button } from '@/components'
 import Link from 'next/link'
 import { useState } from 'react'
+import { useTheme } from 'next-themes'
+
 
 export default function Header() {
   const [search, setSearch] = useState<Boolean>(false)
   const [qrDownload, setQrDownload] = useState<Boolean>(false)
   const [globe, setGlobe] = useState<Boolean>(false)
+  const { theme, setTheme } = useTheme()
+
   return (
     <header className={styles.header}>
       <div className={styles.left}>
@@ -67,7 +70,7 @@ export default function Header() {
             </div>
           </li>
           <li>
-            <div className={styles.element}>
+            <div className={styles.element} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
               <Icon icon={'darkMode'} />
             </div>
           </li>

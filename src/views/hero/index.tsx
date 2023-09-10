@@ -1,12 +1,15 @@
+"use client"
 import { Button, Container, HeroCounterCard } from '@/components'
 import styles from './index.module.scss'
 import Image from 'next/image'
 import Images from '@/constants/images'
 import Icon from '@/components/icons'
 import { HeroCounterData } from '@/data/heroCounter'
+import { useTheme } from 'next-themes'
 
 
 export default function Hero() {
+  const { theme, setTheme } = useTheme()
   return (
     <div className={styles.hero}>
       <Container>
@@ -23,7 +26,7 @@ export default function Hero() {
             </div>
 
             <div className={styles.buttons}>
-              <Button title='Sign up width Email or Phone' variant='primary' mt={16} icon='user' iconWidth={17} iconHeight={16} fullWidth={true}/>
+              <Button title='Sign up width Email or Phone' variant='primary' mt={16} icon='user' iconWidth={17} iconHeight={16} fullWidth={true} />
               <div className={styles.line_area}>
                 <span className={styles.line}></span>
                 <span className={styles.line_text}>
@@ -33,13 +36,13 @@ export default function Hero() {
               </div>
               <div className={styles.login_buttons}>
                 <Button title='Google' variant='secondary' mt={16} icon='google' iconWidth={24} iconHeight={24} fullWidth={true} />
-                <Button title='Apple' variant='secondary' mt={16} icon='apple' iconWidth={24} iconHeight={24}  fullWidth={true}/>
+                <Button title='Apple' variant='secondary' mt={16} icon='apple' iconWidth={24} iconHeight={24} fullWidth={true} />
               </div>
             </div>
           </div>
 
           <div className={styles.fore_ground}>
-            <Image src={Images.ForeGround} width={588} height={484} alt='FeroGround' />
+            <Image src={theme === "dark" ? Images.ForeGroundDark : Images.ForeGround} width={588} height={484} alt='FeroGround' />
           </div>
         </div>
         <div className={styles.hero_bottom}>

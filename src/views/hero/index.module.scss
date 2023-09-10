@@ -1,5 +1,5 @@
 .hero {
-  background-color: #FAFAFA;
+  background-color: var(--color-bg2);
   position: relative;
 
   .hero_top {
@@ -14,6 +14,7 @@
       font-weight: 600;
       font-size: 48px;
       line-height: 56px;
+      color: var(--color-textPrimary);
     }
 
     .trade_btc_free {
@@ -25,7 +26,7 @@
         font-weight: 300;
         font-size: 20px;
         line-height: 28px;
-        color: #1E2329;
+        color: var(--color-textPrimary);
         margin-left: 8px;
         cursor: pointer;
       }

@@ -21,7 +21,7 @@
 
   &:hover {
     .in {
-      background-color: #FAFAFA;
+      background-color: var(--color-bg3);
     }
   }
 
@@ -29,6 +29,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #1E2329;
+    color: var(--color-textPrimary);
+    margin-top: 12px;
   }
 }

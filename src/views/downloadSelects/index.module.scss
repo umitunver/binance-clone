@@ -12,7 +12,7 @@
       min-width: 100%;
       display: flex;
       align-items: center;
-      background-color: #FAFAFA;
+      background-color: var(--color-bg2);
       border-radius: 8px;
       padding: 16px;
       margin-bottom: 40px;
@@ -20,7 +20,23 @@
       .right {
         margin-left: 16px;
       }
+
+      .qr_title {
+        color: var(--color-textThird);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .qr_desc {
+        color: var(--color-textPrimary);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 12px;
+      }
     }
+
 
     .download_select {
       display: flex;
