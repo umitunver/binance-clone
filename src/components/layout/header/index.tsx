@@ -71,7 +71,7 @@ export default function Header() {
           </li>
           <li>
             <div className={styles.element} onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-              <Icon icon={'darkMode'} />
+              <Icon icon={theme === 'light' ? 'darkMode' : 'lightMode'} />
             </div>
           </li>
         </ul>
